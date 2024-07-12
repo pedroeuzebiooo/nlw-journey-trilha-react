@@ -20,6 +20,10 @@ export function TripDetailsPage() {
     setIsCreateActivityModalOpen(true);
   }
 
+  function closeCreateActivityModal() {
+    setIsCreateActivityModalOpen(false);
+  }
+
   return (
     <div className="max-w-6xl px-6 py-10 mx-auto space-y-8">
       <div className="px-4 h-16 rounded-xl bg-zinc-900 shadow-shape flex items-center justify-between">
@@ -197,7 +201,7 @@ export function TripDetailsPage() {
             <div className="space-y-2">
               <div className="flex items-center justify-between">
                 <h2 className="text-lg font-semibold">Cadastrar atividade</h2>
-                <button type="button">
+                <button type="button" onClick={closeCreateActivityModal}>
                   <X className="size-5 text-zinc-400" />
                 </button>
               </div>
