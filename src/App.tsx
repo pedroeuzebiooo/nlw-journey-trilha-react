@@ -41,6 +41,10 @@ export function App() {
     setIsConfirmTripModalOpen(true);
   }
 
+  function closeConfirmTripModal() {
+    setIsConfirmTripModalOpen(false);
+  }
+
   function addNewEmailToInvite(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
@@ -233,7 +237,7 @@ export function App() {
                 <h2 className="text-lg font-semibold">
                   Confirmar criação da viagem
                 </h2>
-                <button type="button">
+                <button type="button" onClick={closeConfirmTripModal}>
                   <X className="size-5 text-zinc-400" />
                 </button>
               </div>
