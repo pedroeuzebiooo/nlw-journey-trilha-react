@@ -24,6 +24,10 @@ export function DestinationAndDateStep({
     return setIsDatePickerOpen(true);
   }
 
+  function closeDatePicker() {
+    return setIsDatePickerOpen(false);
+  }
+
   return (
     <div className="h-16 bg-zinc-900 px-4 rounded-xl flex items-center shadow-shape gap-3">
       <div className="flex items-center gap-2 flex-1">
@@ -51,7 +55,7 @@ export function DestinationAndDateStep({
             <div className="space-y-2">
               <div className="flex items-center justify-between">
                 <h2 className="text-lg font-semibold">Selecione a data</h2>
-                <button type="button">
+                <button type="button" onClick={closeDatePicker}>
                   <X className="size-5 text-zinc-400" />
                 </button>
               </div>
