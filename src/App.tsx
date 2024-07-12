@@ -177,6 +177,8 @@ export function App() {
                 </button>
               </div>
             </div>
+
+            <div className="w-full h-px bg-zinc-800"></div>
           </div>
         </div>
       )}
