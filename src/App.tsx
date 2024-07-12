@@ -14,6 +14,10 @@ export function App() {
     setIsGuestsInputOpen(true);
   }
 
+  function closeGuestsInput() {
+    setIsGuestsInputOpen(false);
+  }
+
   return (
     <div className="h-screen flex items-center justify-center bg-pattern bg-no-repeat bg-center">
       <div className="w-full max-w-3xl px-6 text-center space-y-10">
@@ -32,6 +36,7 @@ export function App() {
                 type="text"
                 placeholder="Para onde você vai?"
                 className="bg-transparent text-lg placeholder-zinc-400 outline-none flex-1"
+                disabled={isGuestsInputOpen}
               />
             </div>
 
@@ -41,13 +46,17 @@ export function App() {
                 type="text"
                 placeholder="Quando?"
                 className="bg-transparent text-lg placeholder-zinc-400 w-40 outline-none"
+                disabled={isGuestsInputOpen}
               />
             </div>
 
             <div className="w-px h-6 bg-zinc-800" />
 
             {isGuestsInputOpen ? (
-              <button className="bg-zinc-800 text-zinc-200 rounded-lg px-5 py-2 font-medium flex items-center gap-2 hover:bg-zinc-700">
+              <button
+                className="bg-zinc-800 text-zinc-200 rounded-lg px-5 py-2 font-medium flex items-center gap-2 hover:bg-zinc-700"
+                onClick={closeGuestsInput}
+              >
                 Alterar local/data
                 <Settings2 className="size-5" />
               </button>
