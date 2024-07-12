@@ -4,6 +4,7 @@ import {
   ArrowRight,
   UserRoundPlus,
   Settings2,
+  X,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -21,6 +22,10 @@ export function App() {
 
   function openGuestsModal() {
     setIsGuestsModalOpen(true);
+  }
+
+  function closeGuestsModal() {
+    setIsGuestsModalOpen(false);
   }
 
   return (
@@ -116,7 +121,12 @@ export function App() {
       {isGuestsModalOpen && (
         <div className="fixed inset-0 bg-black/60 flex items-center justify-center">
           <div className="w-[640px] rounded-xl py-5 px-6 shadow-shape bg-zinc-900">
-            <h2>Selecionar convidados</h2>
+            <div className="flex items-center justify-between">
+              <h2>Selecionar convidados</h2>
+              <button type="button" onClick={closeGuestsModal}>
+                <X className="size-5 text-zinc-400" />
+              </button>
+            </div>
           </div>
         </div>
       )}
