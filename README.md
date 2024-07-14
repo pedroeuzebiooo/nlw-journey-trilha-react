@@ -1,32 +1,70 @@
 <h1 align="center">
   <a href="https://nlw-journey-trilha-react.vercel.app">
-    <img src="./public/logo.svg" alt="Logo plann.er">
+    <img src="./public/logo.svg" alt="Logo do projeto plann.er">
   </a>
 </h1>
 
 ## 📃 Roteiro
 
-- [📃 Roteiro](#-roteiro)
-- [❓ Sobre](#-sobre)
-- [🛠️ Tecnologias](#️-tecnologias)
-- [📋 Pré-requisitos](#-pré-requisitos)
-- [🔧 Instalação](#-instalação)
-- [⚙️ Executando](#️-executando)
-- [🔖 Layout](#-layout)
-- [🌐 Deploy](#-deploy)
-- [🧑‍💻 Autor](#-autor)
-- [📝 Licença](#-licença)
+<ul>
+  <li>
+    <a href="#sobre">
+      ❓ Sobre
+    </a>
+  </li>
+  <li>
+    <a href="#tecnologias">
+      🛠️ Tecnologias
+    </a>
+  </li>
+  <li>
+    <a href="#pre-requisitos">
+      📋 Pré-requisitos
+    </a>
+  </li>
+  </li>
+  <li>
+    <a href="#instalacao">
+      🔧 Instalação
+    </a>
+  </li>
+  <li>
+    <a href="#executando">
+      ⚙️ Executando
+    </a>
+  </li>
+  <li>
+    <a href="#layout">
+      🔖 Layout
+    </a>
+  </li>
+  <li>
+    <a href="#deploy">
+      🌐 Deploy
+    </a>
+  </li>
+  <li>
+    <a href="#autor">
+      🧑‍💻 Autor
+    </a>
+  </li>
+  <li>
+    <a href="#Licença">
+      📝 Licença
+    </a>
+  </li>
+</ul>
 
 <p align="center">
   <a href="https://nlw-journey-trilha-react.vercel.app">
-    <img src="./.github/preview.png" alt="Preview do projeto versão desktop" />
+    <img src="./.github/preview.png" alt="Preview do projeto">
   </a>
 </p>
 
 ## ❓ Sobre
 
 <p align="justify">
-  O projeto é um site desktop para montar planos de viagem com amigos, registrar atividades e links úteis. Esse é um dos projetos do evento NLW Journey, um dos conteúdos disponíveis para alunos da Rocketseat.
+  Front-end em ReactJS da aplicação plann.er construída durante o NLW Journey da Rocketseat. O projeto é um site desktop para montar planos de viagem com amigos, registrar atividades e links úteis.
 </p>
 
 ## 🛠️ Tecnologias
@@ -34,8 +72,12 @@
 O projeto foi desenvolvido com as seguintes tecnologias:
 
 - [React](https://react.dev)
-- [Vite](https://vitejs.dev/)
-- [Tailwind CSS](https://tailwindcss.com)
+- [ViteJS](https://vitejs.dev)
+- [TypeScript](https://www.typescriptlang.org)
+- [Tailwind CSS](https://vitejs.dev)
+- [Axios](https://axios-http.com/ptbr/docs/intro)
+- [Lucide React](https://lucide.dev)
+- [date-fns](https://date-fns.org)
 
 ## 📋 Pré-requisitos
 
@@ -43,7 +85,7 @@ Verifique aos seguintes pré-requisitos para poder instalar e executar o projeto
 
 1. Ter instalado um editor de código: [VS Code](https://code.visualstudio.com/download)
 2. Ter instalado o [Git](https://git-scm.com/downloads)
-3. Ter instalado o [Node.js](https://nodejs.org/en)
+3. Ter instalado o [Node.js](https://nodejs.org/en/)
 
 ## 🔧 Instalação
 
@@ -51,9 +93,9 @@ Siga o passo a passo para instalar o projeto:
 
 1. Abra o terminal e clone o repositório do projeto:
 
-   ```bash
-   git clone https://github.com/pedroeuzebiooo/nlw-journey-trilha-react
-   ```
+```bash
+git clone https://github.com/pedroeuzebiooo/nlw-journey-trilha-react
+```
 
 ## ⚙️ Executando
 
@@ -61,23 +103,25 @@ Siga o passo a passo para executar o projeto:
 
 1. Entre na pasta do projeto clonado:
 
-   ```bash
-   cd nlw-journey-trilha-react
-   ```
+```bash
+cd nlw-journey-trilha-react
+```
 
 2. Abra a pasta do projeto clonado no editor de código de sua preferência. Caso seja o [VS Code](https://code.visualstudio.com/download) digite o comando:
 
-   ```bash
-   code .
-   ```
+```bash
+code .
+```
 
-3. Instale as dependências do projeto:
+3. Configure o Back-end em NodeJS da aplicação através [DESSE LINK](https://github.com/pedroeuzebiooo/nlw-journey-trilha-nodejs).
 
-   ```bash
-   npm install
-   ```
+4. Configure a variável ambiente:
 
-ou:
+```env
+API_BASE_URL="http://localhost:3333"
+```
+
+5. Instale as dependências do projeto:
 
 ```bash
 npm install
@@ -86,14 +130,20 @@ npm install
 ou:
 
 ```bash
+yarn install
+```
+
+ou:
+
+```bash
 pnpm install
 ```
 
-4. Execute o projeto:
+6. Execute o projeto:
 
-   ```bash
-   npm run dev
-   ```
+```bash
+npm run dev
+```
 
 ou:
 
@@ -109,7 +159,7 @@ pnpm run dev
 
 ## 🔖 Layout
 
-Visualize o layout do projeto através <a href="https://www.figma.com/community/file/1392276515495389646/nlw-journey-planejador-de-viagem">Desse Link</a>. É necessário ter conta no <a href="https://figma.com">Figma</a> para acessá-lo.
+Visualize o layout do projeto através <a href="https://www.figma.com/community/file/1392276515495389646/nlw-journey-planejador-de-viagem">DESSE LINK</a>. É necessário ter conta no <a href="https://figma.com">Figma</a> para acessá-lo.
 
 ## 🌐 Deploy
 
